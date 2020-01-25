@@ -19,6 +19,7 @@ class Artist
   
   def songs 
     Song.all.select.do |song|
+      song.waiter == self 
       
 
 end 
