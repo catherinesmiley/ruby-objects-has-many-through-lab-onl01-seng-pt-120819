@@ -14,6 +14,7 @@ class Genre
   end
   
   def songs 
+    binding.pry
     Song.all.select do |song|
       song.genre == self 
     end 
